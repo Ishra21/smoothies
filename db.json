@@ -2,7 +2,7 @@
     "smoothies" : [
         {
             "id" : 1,
-            "image" : "",
+            "image" : "https://i.pinimg.com/736x/da/ab/9f/daab9f4ccae9b2617e22063ae37f5acf.jpg",
             "name" : "Classic Berry",
             "add_ons" : ["Chia Seeds", "Honey"],
             "price": 60, 
@@ -10,34 +10,34 @@
         },
         {
             "id" :2,
-            "image" : "",
+            "image" : "https://i.pinimg.com/736x/f2/0f/84/f20f84397eb01a5ae523fe15863ac62b.jpg",
             "name" : "Tropical Mango",
             "add_ons" : ["Almond Milk", "Chia Seeds"],
-            "price": 60,
+            "price": 70,
             "quantity" : 1
         },
         {
             "id" : 3,
-            "image" : "",
+            "image" : "https://i.pinimg.com/736x/0b/45/38/0b453855378c21cf0e44471779bec357.jpg",
             "name" : "Green Detox",
             "add_ons" : ["Protein", "Chia Seeds", "Honey"],
-            "price": 60,
+            "price": 80,
             "quantity" : 1
         },
         {
             "id" : 4,
-            "image" : "",
-            "name" : "Chocolate Power",
+            "image" : "https://i.pinimg.com/736x/a8/1f/fa/a81ffaa1a1baaed7ffa5c9ee56775c21.jpg",
+            "name" : "Chocolate Powder",
             "add_ons" : ["Almond Milk", "Protein"],
-            "price": 60,
+            "price": 90,
             "quantity" : 1
         },
         {
             "id" : 5,
-            "image" : "",
+            "image" : "https://i.pinimg.com/736x/d3/67/b3/d367b3e37219433a9c92de2c3d1c08ef.jpg",
             "name" : "Peanut Butter Banana",
             "add_ons" : ["Almond Milk"," Protein", "Honey"],
-            "price": 60,
+            "price": 100,
             "quantity" : 1
         }
     ]
