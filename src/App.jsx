@@ -6,6 +6,7 @@ import Home from './Pages/Home'
 import Menu from './Pages/Menu'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import CardItems from './Pages/CardItems'
 const App = () => {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/menu" element={<Menu/>} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<CardItems/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

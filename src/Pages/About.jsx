@@ -2,8 +2,12 @@ import React from 'react'
 import ourstore from '../assets/assests/ourstore.png'
 import founder from '../assets/assests/founder.jpeg'
 import headofoperation from '../assets/assests/headofoperation.jpeg'
-import emily from  '../assets/assests/emily.png'
+import pankaj from  '../assets/assests/Pankaj.jpeg'
+
+
 const About = () => {
+
+
 return (
     <>
 
@@ -65,8 +69,8 @@ return (
                             <p className="text-gray-600">Head of Operations</p>
                         </div>
                         <div className="text-center">
-                            <img src={emily} alt="Emily" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"/>
-                            <h4 className="text-xl font-semibold mb-2">Emily Martinez</h4>
+                            <img src={pankaj} alt="Pankaj Bamniya" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"/>
+                            <h4 className="text-xl font-semibold mb-2">Pankaj Bamniya</h4>
                             <p className="text-gray-600">Nutritionist</p>
                         </div>
                     </div>

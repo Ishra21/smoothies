@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import logo from "../assets/logo.png"
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { GiShoppingCart } from 'react-icons/gi'
 
 const Navbar = () => {
@@ -10,6 +10,8 @@ const Navbar = () => {
     const handleMenu = () => {
         setMenuOpen(menuOpen ? false : true)
     }
+
+const pathname = useLocation()
 
     return (
         <nav className="bg-white shadow-sm fixed w-full z-50">
@@ -21,11 +23,15 @@ const Navbar = () => {
                         <Link to={"/"} className="flex-shrink-0 flex items-center">
                             <img className="h-14 md:h-20 w-auto" src={logo} alt="Smoothie Bar" />
                         </Link>
-                        <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                            <Link to={"/"} className="border-custom text-custom inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</Link>
-                            <Link to={"/menu"} className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Menu</Link>
-                            <Link to={"/about"} className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">About</Link>
-                            <Link to={"/contact"} className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Contact</Link>
+                        <div className="hidden sm:ml-6 sm:flex sm:space-x-8"> 
+                        <Link to={"/"} className={pathname === '/' ?  "border-custom text-custom inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" }>Home</Link>
+                            {/* <Link to={"/"} className="border-custom text-custom inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</Link> */}
+                            <Link to={"/menu"} className={pathname === '/menu' ?  "border-custom text-custom inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" }>Menu</Link>
+                            <Link to={"/about"} className={pathname==='/about' ?  "border-custom text-custom inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" }>About</Link>
+                            <Link to={"/contact"} className={pathname === '/contact' ?  "border-custom text-custom inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" }>Contact</Link>
+                            {/* <Link to={"/menu"} className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Menu</Link> */}
+                            {/* <Link to={"/about"} className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">About</Link> */}
+                            {/* <Link to={"/contact"} className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Contact</Link> */}
                         </div>
                     </div>
                     <div className="flex items-center">
@@ -40,7 +46,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className="absolute right-0 top-4 flex items-center sm:hidden md:hidden">
+            <div className="absolute right-0 top-3 flex items-center sm:hidden md:hidden">
                             {/* <!-- Mobile menu button--> */}
                             <button
                                 onClick={handleMenu}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import OrderNow from '../Components/OrderNow'
 
 import acai from '../assets/assests/acai.png'
@@ -7,7 +7,23 @@ import goldenglow from '../assets/assests/goldenglow.png'
 import specialoffer from '../assets/assests/specialoffer.png'
 import heroSmoothie from '../assets/assests/heroSmoothie.png'
 import ClassicSmoothie from '../Components/ClassicSmoothie'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchData } from '../features/Cart/CartSlice'
 const Menu = () => {
+
+    const dispatch = useDispatch()
+
+    const {All_Carts} = useSelector((state) => state.Cart)
+
+    console.log(All_Carts)
+
+
+
+    useEffect(() => {
+        dispatch(fetchData())
+    }, [dispatch]);
+
+
     return (
         <>
             <section id="menu-section" class="pt-24 pb-16 bg-white">

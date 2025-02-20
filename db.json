@@ -4,35 +4,35 @@
             "id" : 1,
             "image" : "",
             "name" : "Classic Berry",
-            "add_once" : ["Chia Seeds", "Honey"],
+            "add_ons" : ["Chia Seeds", "Honey"],
             "quantity" : 1
         },
         {
-            "id" : 1,
+            "id" :2,
             "image" : "",
-            "name" : "Classic Berry",
-            "add_once" : ["Chia Seeds", "Honey"],
+            "name" : "Tropical Mango",
+            "add_ons" : ["Almond Milk", "Chia Seeds"],
             "quantity" : 1
         },
         {
-            "id" : 1,
+            "id" : 3,
             "image" : "",
-            "name" : "Classic Berry",
-            "add_once" : ["Chia Seeds", "Honey"],
+            "name" : "Green Detox",
+            "add_ons" : ["Protein", "Chia Seeds", "Honey"],
             "quantity" : 1
         },
         {
-            "id" : 1,
+            "id" : 4,
             "image" : "",
-            "name" : "Classic Berry",
-            "add_once" : ["Chia Seeds", "Honey"],
+            "name" : "Chocolate Power",
+            "add_ons" : ["Almond Milk", "Protein"],
             "quantity" : 1
         },
         {
-            "id" : 1,
+            "id" : 5,
             "image" : "",
-            "name" : "Classic Berry",
-            "add_once" : ["Chia Seeds", "Honey"],
+            "name" : "Peanut Butter Banana",
+            "add_ons" : ["Almond Milk"," Protein", "Honey"],
             "quantity" : 1
         }
     ]

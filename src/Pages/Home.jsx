@@ -8,6 +8,7 @@ import greengodess from '../assets/assests/greengodess.png'
 import proteinPower from '../assets/assests/proteinPower.png'
 import heroSmoothie from '../assets/assests/heroSmoothie.png'
 import ClassicSmoothie from '../Components/ClassicSmoothie'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
@@ -34,6 +35,10 @@ const Home = () => {
                 <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Signature Smoothies</h2>
                                 <ClassicSmoothie/>
+<div className='flex items-center justify-center mt-4'>
+<Link to={"/menu"} className="bg-[#98D8AA] text-white  px-8 py-3 font-medium hover:bg-opacity-90 transform hover:scale-105 transition-transform duration-300 shadow-lg">View Menu</Link>
+</div>
+
                 </div>
             </section>
             {/* why choose */}
