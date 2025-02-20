@@ -5,6 +5,7 @@
             "image" : "",
             "name" : "Classic Berry",
             "add_ons" : ["Chia Seeds", "Honey"],
+            "price": 60, 
             "quantity" : 1
         },
         {
@@ -12,6 +13,7 @@
             "image" : "",
             "name" : "Tropical Mango",
             "add_ons" : ["Almond Milk", "Chia Seeds"],
+            "price": 60,
             "quantity" : 1
         },
         {
@@ -19,6 +21,7 @@
             "image" : "",
             "name" : "Green Detox",
             "add_ons" : ["Protein", "Chia Seeds", "Honey"],
+            "price": 60,
             "quantity" : 1
         },
         {
@@ -26,6 +29,7 @@
             "image" : "",
             "name" : "Chocolate Power",
             "add_ons" : ["Almond Milk", "Protein"],
+            "price": 60,
             "quantity" : 1
         },
         {
@@ -33,6 +37,7 @@
             "image" : "",
             "name" : "Peanut Butter Banana",
             "add_ons" : ["Almond Milk"," Protein", "Honey"],
+            "price": 60,
             "quantity" : 1
         }
     ]

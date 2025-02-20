@@ -11,7 +11,7 @@ const CartSlice = createSlice({
         message : ""
     },
     reducers : {},
-    extraReducers : builder  => {
+    extraReducers : (builder)  => {
         builder
         .addCase(fetchData.pending , (state , action) =>{
             state.isLoading = true
