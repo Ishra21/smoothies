@@ -8,15 +8,15 @@ const OrderNow = () => {
         <div className="max-w-2xl mx-auto">
             <form className="space-y-6">
                 <div>
-                    <label for="name" className="block text-sm font-medium text-gray-700">Name</label>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
                     <input type="text" id="name" className="mt-1 block w-full p-1 rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom"/>
                 </div>
                 <div>
-                    <label for="email" className="block text-sm font-medium text-gray-700">Email</label>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
                     <input type="email" id="email" className="mt-1 block w-full rounded-md p-1 border-gray-300 shadow-sm focus:border-custom focus:ring-custom"/>
                 </div>
                 <div>
-                    <label for="smoothie" className="block text-sm font-medium text-gray-700">Choose Your Smoothie</label>
+                    <label htmlFor="smoothie" className="block text-sm font-medium text-gray-700">Choose Your Smoothie</label>
                     <select id="smoothie" className="mt-1 block w-full p-1 rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom">
                         <option>Tropical Paradise</option>
                         <option>Berry Blast</option>
@@ -25,7 +25,7 @@ const OrderNow = () => {
                     </select>
                 </div>
                 <div>
-                    <label for="message" className="block text-sm font-medium text-gray-700">Special Instructions</label>
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700">Special Instructions</label>
                     <textarea id="message" rows="4" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom"></textarea>
                 </div>
                 <div>

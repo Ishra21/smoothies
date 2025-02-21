@@ -9,6 +9,7 @@ import heroSmoothie from '../assets/assests/heroSmoothie.png'
 import ClassicSmoothie from '../Components/ClassicSmoothie'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchData } from '../features/Cart/CartSlice'
+import Loader from '../Components/Loader'
 const Menu = () => {
 
     const dispatch = useDispatch()
@@ -18,6 +19,12 @@ const Menu = () => {
     // console.log(All_Carts)
 
 
+    const{isLoading} = useSelector(state=> state.Cart)
+
+
+    if(isLoading){
+        <Loader/>
+    }
 
     useEffect(() => {
         dispatch(fetchData())
@@ -107,9 +114,9 @@ const Menu = () => {
                 </div>
             </section>
 
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#F7D060]">
                 <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Classic Smoothies</h2>
+                    <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 ">Classic Smoothies</h2>
                     <div className="glide">
                         <div className="glide__track " data-glide-el="track">
                         
@@ -122,7 +129,7 @@ const Menu = () => {
                 </div>
             </section>
 
-            <section className="py-16 bg-[#F7D060] bg-opacity-10">
+            {/* <section className="py-16 bg-[#F7D060] bg-opacity-10">
                 <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Premium Smoothies</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -150,7 +157,7 @@ const Menu = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className="py-16 bg-gray-50">
                 <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
