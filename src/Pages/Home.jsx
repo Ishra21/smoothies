@@ -44,8 +44,7 @@ const Home = () => {
             {/* Special OFfer */}
             <SpecialOffer />
             {/* customer review */}
-            {/* order now */}
-            <OrderNow />
+
         </main>
 
 

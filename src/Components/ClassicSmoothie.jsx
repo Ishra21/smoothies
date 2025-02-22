@@ -33,14 +33,14 @@ const ClassicSmoothie = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
             {
-                All_Carts.map((item) => {
+                All_Carts?.map((item) => {
                 //    console.log(item)
                     return (
                         <div key={item.id} className="bg-white rounded-lg p-6 text-center shadow-xl my-4 ">
                             <img src={item.image} alt="Tropical Paradise" className="w-full h-64 object-cover rounded-lg mb-4" />
                             <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.name}</h3>
                             <div className='my-2'>
-                                {item.add_ons.map((add, index) => {
+                                {item.add_ons?.map((add, index) => {
                                     return (
                                         <p className='text-gray-500 ' key={index}>{add.name} (₹{add.amount})</p>
                                     )
