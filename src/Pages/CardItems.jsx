@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { handleDecrease, handleIncrese, handleRemoveItem } from '../features/menu/menuSlice'
+import { handleDecrease, handleIncrese, handleRemoveItem, updateAddOns } from '../features/menu/menuSlice'
 import CheckOut from '../Components/CheckOut'
 
+import { Link } from 'react-router-dom'
+import { HiArrowSmRight } from "react-icons/hi";
 
 const CardItems = () => {
 
@@ -16,7 +18,13 @@ const CardItems = () => {
   }, [menu])
 
 
-
+  const handleAddOnChange = (e, item) => {
+    const selectedAddOn = item.add_ons.find(add => add.name === e.target.value);
+    if (selectedAddOn) {
+      dispatch(updateAddOns({ id: item.id, addOn: selectedAddOn }));
+    }
+  };
+  
 
 
   return (
@@ -24,12 +32,17 @@ const CardItems = () => {
       <section className="pt-24 pb-16 bg-white">
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Shopping Cart</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="">
             <div className="w-full max-w-4xl mx-auto">
               <div className="bg-white shadow-lg rounded-lg overflow-hidden">
                 {
                   menu.length <= 0 ? (
-                    <img  className= "w-84" src='https://files.oaiusercontent.com/file-1j9YXTWiTvq6dZBRNYYPkp?se=2025-02-21T11%3A09%3A15Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D0575a22c-b410-4c72-ae59-65056a8f7bd9.webp&sig=Mjl0ZtfYKCKS3dGjUPOxVrZGX0g5pAgZFmrQRU/%2BxCw%3D'></img>
+                    <div className='flex items-center flex-col'>
+                      <img className="w-84" src="https://i.pinimg.com/originals/72/41/da/7241da96df385043010a22ab2c54ae3d.gif"></img>
+                      <p className='text-3xl text-center my-2 font-bold' >Your Card is Empty</p>
+                      <Link to={"/menu"} className=" my-2 flex items-center  text-[#98D8AA] !rounded-button px-8 py-3 font-medium   transform hover:scale-105 transition-transform duration-300 ">View Menu<HiArrowSmRight /></Link>
+
+                    </div>
 
                   ) : (
                     <div className="p-6 space-y-6">
@@ -46,12 +59,12 @@ const CardItems = () => {
                                   </div>
                                   <div className="flex items-center my-2">
                                     <span className="text-gray-600 mr-2">Add-on</span>
-                                    <select className="form-select border-1 ">
-                                      {item.add_ons.map((add, index) => {
-                                        return (
-                                          <option key={index}>{add}</option>
-                                        )
-                                      })}
+                                    <select className="form-select border-1" onChange={(e) => handleAddOnChange(e, item)}>
+                                        {item.add_ons.map((add, index) => (
+                                        <option key={index} value={add.name}>
+                                          {add.name} (₹{add.amount})
+                                        </option>
+                                      ))}
                                     </select>
                                   </div>
                                 </div>

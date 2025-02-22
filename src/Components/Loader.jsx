@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 const Loader = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-pink-100">
+    <div className="flex flex-col items-center justify-center h-screen bg-green-100">
     <div className="relative w-24 h-40 border-4 border-pink-500 rounded-t-3xl overflow-hidden">
       <motion.div
         className="absolute bottom-0 w-full bg-pink-400"
