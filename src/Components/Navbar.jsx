@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import logo from "../assets/logo.png"
 import { Link, useLocation } from 'react-router-dom'
 import { GiShoppingCart } from 'react-icons/gi'
-import { useSelector } from 'react-redux'
+
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)

@@ -36,7 +36,6 @@ const Home = () => {
                     <div className='flex items-center justify-center mt-4'>
                         <Link to={"/menu"} className="bg-[#98D8AA] text-white  px-8 py-3 font-medium hover:bg-opacity-90 transform hover:scale-105 transition-transform duration-300 shadow-lg">View Menu</Link>
                     </div>
-
                 </div>
             </section>
             {/* why choose */}
