@@ -22,7 +22,7 @@ const ClassicSmoothie = () => {
     const handleAddToCart = (item) => {
         dispatch(addToCart(item))
         if(item){
-            toast.success(`${item.name} added to cart`)
+            toast.success(`${item.name} added to cart` , {autoClose: 3000})
         }
     }
 
