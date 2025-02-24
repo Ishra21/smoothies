@@ -42,7 +42,7 @@ const ClassicSmoothie = () => {
                             <div className='my-2'>
                                 {item.add_ons?.map((add, index) => {
                                     return (
-                                        <p className='text-gray-500 ' key={index}>{add.name} (₹{add.amount})</p>
+                                        <p className='text-gray-500 ' key={index}>{add.name}</p>
                                     )
                                     // console.log(add)
                                 })}

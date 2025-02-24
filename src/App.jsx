@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Footer from './Components/Footer'
 import Home from './Pages/Home'
 import Menu from './Pages/Menu'
@@ -10,7 +10,7 @@ import CardItems from './Pages/CardItems'
 import { ToastContainer } from 'react-toastify'
 const App = () => {
   return (
-    // <BrowserRouter>
+    
     <HashRouter>
       <Navbar />
       <Routes>
@@ -23,7 +23,7 @@ const App = () => {
       <Footer />
       <ToastContainer/>
       </HashRouter>
-    // </BrowserRouter>
+
   )
 }
 

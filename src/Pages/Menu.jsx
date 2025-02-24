@@ -10,6 +10,7 @@ import ClassicSmoothie from '../Components/ClassicSmoothie'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchData } from '../features/Cart/CartSlice'
 import Loader from '../Components/Loader'
+import { Link } from 'react-router-dom'
 const Menu = () => {
 
     const dispatch = useDispatch()
@@ -91,7 +92,7 @@ const Menu = () => {
                         </div>
                     </div>
                     <div className="mt-12 text-center">
-                        <button className="bg-[#98D8AA] text-white !rounded-button px-8 py-3 font-medium hover:bg-opacity-90  transform hover:scale-105 transition-transform duration-300 shadow-lg">Order Now</button>
+                        <Link to={"/cart"} className="bg-[#98D8AA] text-white !rounded-button px-8 py-3 font-medium hover:bg-opacity-90  transform hover:scale-105 transition-transform duration-300 shadow-lg">Order Now</Link>
                     </div>
                 </div>
             </section>
@@ -101,11 +102,7 @@ const Menu = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 items-center">
                         <div className="text-center lg:text-left">
                             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">Our Fresh &amp; Healthy Menu</h1>
-                            <p className="text-lg text-gray-600 mb-8">Explore our wide selection of nutritious and delicious smoothies, made with the finest ingredients</p>
-                            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                                <button className="bg-[#98D8AA] text-white !rounded-button px-8 py-3 font-medium hover:bg-opacity-90 transform hover:scale-105 transition-transform duration-300 shadow-lg">Order Now</button>
-                                <button className="border border-[#F7D060] text-[#98D8AA] !rounded-button px-8 py-3 font-medium hover:bg-[#F7D060] hover:text-white transform hover:scale-105 transition-transform duration-300 shadow-lg">View Menu</button>
-                            </div>
+                            <p className="text-lg text-gray-600">Explore our wide selection of nutritious and delicious smoothies, made with the finest ingredients</p>
                         </div>
                         <div className="relative">
                             <img src={heroSmoothie} alt="Hero Smoothie" className="w-full h-auto object-contain" />
