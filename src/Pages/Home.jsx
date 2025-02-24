@@ -5,8 +5,7 @@ import WhySmoothie from '../Components/WhySmoothie'
 import heroSmoothie from '../assets/assests/heroSmoothie.png'
 import ClassicSmoothie from '../Components/ClassicSmoothie'
 import { Link } from 'react-router-dom'
-import { useSelector } from 'react-redux'
-import Loader from '../Components/Loader'
+
 
 const Home = () => {
 

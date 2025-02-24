@@ -27,7 +27,7 @@ const CardItems = () => {
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">Shopping Cart</h2>
           <div className="w-full max-w-4xl mx-auto">
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-              {menu.length <= 0 ? (
+              {menu.length === 0 ? (
                 <div className='flex flex-col items-center text-center'>
                   <img className="w-64 sm:w-80" src="https://i.pinimg.com/originals/72/41/da/7241da96df385043010a22ab2c54ae3d.gif" alt="Empty Cart" />
                   <p className='text-xl sm:text-2xl font-bold my-2'>Your Cart is Empty</p>

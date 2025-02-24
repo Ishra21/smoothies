@@ -19,8 +19,7 @@ const menuSlice = createSlice({
             } else {
                 state.menu.push({ ...item, quantity: 1, add_ons: item.add_ons ? [...item.add_ons] : [] });
             }
-        }
-        ,
+        },
 
         handleIncrese :(state,action) =>{
             const item = state.menu.find(cartItem => cartItem.id === action.payload.id)
@@ -41,13 +40,13 @@ const menuSlice = createSlice({
             const { id, addOn } = action.payload;
             const item = state.menu.find((item) => item.id === id);
             if (item) {
-              if (!item.selectedAddOns) {
+                if (!item.selectedAddOns) {
                 item.selectedAddOns = [];
-              }
+                }
               item.selectedAddOns.push(addOn); // Add new add-on
             }
-          }
-          
+            }
+    
     },
 
     extraReducers : (builder) =>{}

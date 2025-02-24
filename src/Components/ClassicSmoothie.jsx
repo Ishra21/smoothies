@@ -6,12 +6,12 @@ import { toast } from 'react-toastify'
 import Loader from '../Components/Loader'
 const ClassicSmoothie = () => {
 
-    const { All_Carts,isLoading } = useSelector(state => state.Cart)
+    const { All_Carts, isLoading } = useSelector(state => state.Cart)
     // console.log(All_Carts)
-   
 
 
-  
+
+
 
     const dispatch = useDispatch()
 
@@ -21,20 +21,20 @@ const ClassicSmoothie = () => {
 
     const handleAddToCart = (item) => {
         dispatch(addToCart(item))
-        if(item){
-            toast.success(`${item.name} added to cart` , {autoClose: 3000})
+        if (item) {
+            toast.success(`${item.name} added to cart`, { autoClose: 3000 })
         }
     }
 
-    if(isLoading){
-      return   <Loader/>
+    if (isLoading) {
+        return <Loader />
     }
     return (
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
             {
                 All_Carts?.map((item) => {
-                //    console.log(item)
+                    //    console.log(item)
                     return (
                         <div key={item.id} className="bg-white rounded-lg p-6 text-center shadow-xl my-4 ">
                             <img src={item.image} alt="Tropical Paradise" className="w-full h-64 object-cover rounded-lg mb-4" />

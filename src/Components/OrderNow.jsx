@@ -26,7 +26,7 @@ const OrderNow = () => {
                 </div>
                 <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700">Special Instructions</label>
-                    <textarea id="message" rows="4" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom"></textarea>
+                    <textarea id="message" rows="4" className="mt-1 block w-full p-1 rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom"></textarea>
                 </div>
                 <div>
                     <button type="submit" className="w-full bg-[#98D8AA] text-white !rounded-button px-8 py-3 font-medium hover:bg-opacity-90 transform hover:scale-105 transition-transform duration-300 shadow-lg">Place Order</button>
