@@ -126,35 +126,6 @@ const Menu = () => {
                 </div>
             </section>
 
-            {/* <section className="py-16 bg-[#F7D060] bg-opacity-10">
-                <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Premium Smoothies</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div className="bg-white rounded-lg p-8 text-center shadow-xl transform hover:scale-105 transition-transform duration-300">
-                            <img src={acai} alt="Acai Supreme" className="w-full h-64 object-cover rounded-lg mb-4" />
-                            <h3 className="text-xl font-semibold text-gray-900 mb-2">Acai Supreme</h3>
-                            <p className="text-gray-600 mb-4">Acai, Banana, Granola, Fresh Berries</p>
-                            <span className="text-custom font-medium">$9.99</span>
-                            <button className="bg-[#98D8AA] mx-4 text-white !rounded-button px-4 py-1 font-medium hover:bg-opacity-90 transform hover:scale-105 transition-transform duration-300 shadow-lg">Add to Cart</button>
-                        </div>
-
-                        <div className="bg-white rounded-lg p-8 text-center shadow-xl transform hover:scale-105 transition-transform duration-300">
-                            <img src={matchamagic} alt="Matcha Magic" className="w-full h-64 object-cover rounded-lg mb-4" />
-                            <h3 className="text-xl font-semibold text-gray-900 mb-2">Matcha Magic</h3>
-                            <p className="text-gray-600 mb-4">Matcha Green Tea, Almond Milk, Honey</p>
-                            <span className="text-custom font-medium">$8.99</span>
-                            <button className="bg-[#98D8AA] mx-4 text-white !rounded-button px-4 py-1 font-medium hover:bg-opacity-90 transform hover:scale-105 transition-transform duration-300 shadow-lg">Add to Cart</button>
-                        </div>
-                        <div className="bg-white rounded-lg p-8 text-center shadow-xl transform hover:scale-105 transition-transform duration-300">
-                            <img src={goldenglow} alt="Golden Glow" className="w-full h-64 object-cover rounded-lg mb-4" />
-                            <h3 className="text-xl font-semibold text-gray-900 mb-2">Golden Glow</h3>
-                            <p className="text-gray-600 mb-4">Turmeric, Ginger, Orange, Coconut</p>
-                            <span className="text-custom font-medium">$8.49</span>
-                            <button className="bg-[#98D8AA] mx-4 text-white !rounded-button px-4 py-1 font-medium hover:bg-opacity-90 transform hover:scale-105 transition-transform duration-300 shadow-lg">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
 
             <section className="py-16 bg-gray-50">
                 <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">

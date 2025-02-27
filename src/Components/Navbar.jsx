@@ -9,6 +9,7 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
     const {menu} = useSelector((state) => state.menu)
+    // const { menu = [] } = useSelector((state) => state.menu) || {};
 
     const handleMenu = () => {
         setMenuOpen(menuOpen ? false : true)
@@ -21,7 +22,7 @@ const Navbar = () => {
 
             <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16">
-                    <div className="flex items-center">
+                    <div className="flex items-center"> 
                         <Link to={"/"} className="flex-shrink-0 flex items-center">
                             <img className="h-14 md:h-20 w-auto" src={logo} alt="Smoothie Bar" />
                         </Link>
@@ -40,9 +41,9 @@ const Navbar = () => {
                         {/* <button className="bg-[#98D8AA] text-white !rounded-button px-6 py-2 font-medium hover:bg-opacity-90  transform hover:scale-105 transition-transform duration-300 shadow-lg">Order Now</button> */}
                         <button className="relative inline-flex items-center px-4 me-5 py-2 text-sm font-medium rounded-lg">
                             <Link to="/Cart">
-                               <GiShoppingCart className="text-3xl" />
-                               <span className="absolute top-0 right-0 flex h-4 w-4 items-center justify-center rounded-full bg-red-600 text-xs text-white">
-    {menu.length}
+                            <GiShoppingCart className="text-3xl" />
+                            <span className="absolute top-0 right-0 flex h-4 w-4 items-center justify-center rounded-full bg-red-600 text-xs text-white">
+    {menu?.length}
   </span>
                     
                             </Link>

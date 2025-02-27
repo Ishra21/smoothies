@@ -37,7 +37,7 @@ const ClassicSmoothie = () => {
                     //    console.log(item)
                     return (
                         <div key={item.id} className="bg-white rounded-lg p-6 text-center shadow-xl my-4 ">
-                            <img src={item.image} alt="Tropical Paradise" className="w-full h-64 object-cover rounded-lg mb-4" />
+                            <img src={item.image} alt="Tropical Paradise" className="w-full h-64 object-cover rounded-lg mb-4 tranform transition hover:scale-105" />
                             <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.name}</h3>
                             <div className='my-2'>
                                 {item.add_ons?.map((add, index) => {
